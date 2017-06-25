@@ -1,16 +1,14 @@
 module.exports = () => {
   return {
     files: [   
-      'src/*.js', 
-      'src/AddressBook.js'    
+      'src/**/*.js'        
     ],
     tests: [
+      'spec/SpecHelper.js',
       'spec/*Spec.js'
     ],
-    debug: true,   
-    env: {
-      type: 'node'
-    },
+    debug: true,
+    
     testFramework: 'jasmine'
   };
 };

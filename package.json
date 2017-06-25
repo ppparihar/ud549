@@ -1,0 +1,25 @@
+{
+  "name": "javascript-test",
+  "version": "1.0.0",
+  "description": "javascript test",
+  "main": "wallaby.js",
+  "dependencies": {
+    "jasmine": "^2.6.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppparihar/ud549.git"
+  },
+  "author": "prem parihar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppparihar/ud549/issues"
+  },
+  "homepage": "https://github.com/ppparihar/ud549#readme"
+}

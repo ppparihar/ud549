@@ -1,24 +1,24 @@
-"use strict";
-describe('AddressBook', () => { 
+
+describe('AddressBook', function() { 
 
 
-    let addressBook;
-    let contact;
-    beforeEach(() => {
-          addressBook = new AddressBook();
+    var addressBook;
+    var contact;
+    beforeEach(function() {
+        addressBook = new AddressBook();
         contact = new Contact("prem","12345");
        
     });
            
-    it('should be able to add contact', () => {       
+    it('should be able to add contact', function() {       
           addressBook.addContact(contact);
         expect(addressBook.getContact(0)).toBe(contact);         
 
     });  
 
-    it('should be able to delete contact', () => {    
+    it('should be able to delete contact', function() {    
         addressBook.addContact(contact);   
-        addressBook.deleteContact(0)
+        addressBook.deleteContact(0);
         expect(addressBook.getContact(0)).not.toBeDefined();                  
 
     });    
@@ -27,11 +27,11 @@ describe('AddressBook', () => {
 });
 
 
-describe('Async Addressbook', () => {
+describe('Async Addressbook', function() {
     
-    let addressBook;
-    let contact;
-    beforeEach((done) => {
+   var addressBook;
+    var contact;
+    beforeEach(function(done) {
         addressBook = new AddressBook();
         contact = new Contact("prem","12345");
        addressBook.initContact(function(){
@@ -39,8 +39,7 @@ describe('Async Addressbook', () => {
        });
     });
     
-     it('should grab initial contact', (done) => { 
-            
+     it('should grab initial contact', function(done){         
         
         expect(addressBook.initialized).toBe(true);                  
         done();
